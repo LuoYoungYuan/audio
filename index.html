@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>音乐播放器</title>
+		<link rel="stylesheet" href="CSS/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/computer.css" />
+		<script type="text/javascript" src="js/audio.js"></script>
+		<!--<script type="text/javascript" src="jq/jquery-2.1.1.min.js"></script>-->
+	</head>
+	<body>
+		<header class="header">
+			<div class="header_logo">
+				<i class="fa fa-music fa-2x"><span style="margin-left:10px;">music</span></i>
+			</div>
+			<div class="header_menu">
+				<div class="header_btn">
+					<i class="fa fa-th-list"></i>
+				</div>
+				<div class="menu_list"></div>
+			</div>
+			<div class="header_input">
+				<input type="text" placeholder="请输入歌名" />
+			</div>
+		</header>
+		
+		<aside class="aside">
+			<ul>
+				<li><div>欧美</div><div><i class="fa fa-tree"></i></div></li>
+				<li><div>日韩</div><div><i class="fa fa-heart-o"></i></div></li>
+				<li><div>日韩</div><div><i class="fa fa-leaf"></i></div></li>
+				<li><div>港台</div><div><i class="fa fa-lightbulb-o"></i></div></li>
+				<li><div>华语</div><div><i class="fa fa-adn"></i></div></li>
+				<li><div>粤语</div><div><i class="fa fa-bar-chart"></i></div></li>
+				<li><div>经典</div><div><i class="fa fa-heartbeat"></i></div></li>
+				<li><div>流行</div><div><i class="fa fa-envelope-o"></i></div></li>
+				<li><div>摇滚</div><div><i class="fa fa-fire"></i></div></li>
+			</ul>
+		</aside>
+		<footer class="footer">
+			<div class="footer_img">
+				<div class="images" id="images"></div>
+			</div>
+			<div class="control_pael">
+				<div class="control_pre" id="control_pre"><i class="fa fa-step-backward" style="cursor:pointer;"></i></div>
+				<div class="control_play" id="control_play"><i class="fa fa-pause fa-2x" id="play_icon" style="cursor:pointer;"></i></div>
+				<div class="control_next" id="control_next"><i class="fa fa-step-forward" style="cursor:pointer;"></i></div>
+				<div class="control_volum" id="control_volum"><i class="fa fa-volume-down" style="cursor:pointer;"></i></div>
+			</div>
+				<div class="time_update" id="time_update">
+					<time>00:00</time>
+				</div>
+				<div class="progress_bar" id="progress_bar">
+					<div class="progress_bar_time" id="progress_bar_time"></div>
+				</div>
+				<div class="time_end" id="time_end">
+					<time>00:00</time>
+				</div>
+			
+		</footer>
+		<section class="section">
+			<img class="section_poster" id="section_poster" src="img/author.jpg">
+			<div class="lyric_title" id="lyric_title"><p></p></div>
+			<div class="lyric_Bigbox" id="lyric_Bigbox">
+					<div class="section_lyric" id="section_lyric"></div>
+				</div>
+			</div>
+			
+			<div class="audio">
+				<audio id="audio" src="mp3/1.mp3" autoplay></audio>
+			</div>
+		</section>
+	</body>
+</html>
